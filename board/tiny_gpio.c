@@ -214,7 +214,9 @@ int gpioInitialise(void)
 main()
 {
     if (gpioInitialise() < 0) return 1;
-    gpioWrite(18, 100);
+    while (1){
+        gpioWrite(18,100);
+    }
 }
 
 
